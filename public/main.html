@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>To-do Lists</title>
+</head>
+<body>
+    <div class="App">
+        <div class="heading">
+          <h1>DIGITAL MART</h1>
+        </div>
+        <div class="con">
+            <form onsubmit= "event.preventDefault();onFormSubmit();" autocomplete="off">
+            <!-- <label for="bname" aria-placeholder="Breed Type"></label> -->
+            <input type="text" id="name" placeholder="TYPE PRODUCT NAME..!!" name="name"><br>
+            <input type="text" id="cost" placeholder="TYPE COST HERE..!!" name="cost"><br>
+            <input type="text" id="description" placeholder="TYPE PRODUCT DESCRIPTION..!!" name="description"><br>
+            <select name="status"  id="status">
+              <option value="none" selected disabled hidden>Select</option>
+              <option name="sold">Sold</option>
+              <option name="unsold">Un sold</option>
+             </select>
+             <input type="submit" value="Submit" id="but"></input>
+        </div>
+      </form>
+    </div>
+    <div class="tab">
+    <h2>PRODUCT DETAILS</h2>
+    
+<table class="list" id="employeList">
+  <tr>
+  
+    <th>Product Name</th>
+    <th>Cost Of The Product</th>
+    <th>Product Description</th>
+    <th>Status</th>
+    <th>Actions</th>
+ 
+  </tr>
+  <tbody>
+   
+  </tbody>
+</div>
+</body>
+<script src="Todolist.js"></script>
